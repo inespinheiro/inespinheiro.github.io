@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inês Pinheiro</title>
+    <link rel="stylesheet" href="extropy.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+
+<div id="contentor2">
+
+        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
+        <img id="spread2" src="img/autoretrato/0.jpg">
+        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
+        <img onclick="myFunction3()"  id="botaofull2" src="img/close.svg">
+    </div>
+    
+<div id=topbar>
+    
+  <a id="link1" href="index.html">⬤</a>
+  <a id="link2" href="about.html">About</a>
+</div>
+
+    
+<div id="main">
+<div id="colunaesq">
+        
+         <div id="contentor">
+        <img id="nav_button" class="left" onclick="prevPic()" src="img/setaesquerda.svg">
+        <img onclick="myFunction()" id="spread" src="img/autoretrato/0.jpg">
+        <img id="nav_button" class="right" onclick="nextPic()" src="img/setadireita.svg">
+        <img onclick="myFunction2()"  id="botaofull" src="img/fullscreen.svg">
+
+    </div>
+
+    </div>
+
+    
+<div id="colunadir">
+
+        <p><sup>/PT/</sup></p>
+
+    <p><i>Auto-retrato</i> surge como uma auto-representação, escrita e visual, gerada com o auxílio de uma do meu telemóvel.
+        O texto foi integralmente escrito na aplicação de mensagens do meu telemóvel, com o "Intelligent Text Input" do Android. </p>
+
+    <p id="creditos">// Escrita e design: <br> Inês Pinheiro</p>
+    <br>
+    <p><sup>/ENG/</sup></p>
+
+    
+    <p><i>Auto-retrato</i> (self-portrait) is a verbal and visual self-representation, generated with the help of my mobile phone. The text was written entirely in my phone's messaging app, with Android's "Intelligent Text Input".</p>
+    <p id="creditos">// Writing and design:<br>Inês Pinheiro</p>
+    
+</div> 
+    
+    
+    </div>
+    
+<script>
+       var target = document.getElementById("spread");
+        var numerodeimagens = 9;
+    
+        var counter = 0;
+        var img = new Array(9);
+        for (var i = 0; i < 9; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/autoretrato/' + i + '.jpg';
+        }
+
+        function nextPic() {
+            counter += 1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+        
+        function prevPic() {
+            counter += -1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+
+    
+        var target2 = document.getElementById("spread2");
+        var numerodeimagens = 9;
+    
+        var counter2 = 0;
+        var img = new Array(9);
+        for (var i = 0; i < 9; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/autoretrato/' + i + '.jpg';
+        }
+
+        function nextPic2() {
+            counter2 += 1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+        
+        function prevPic2() {
+            counter2 += -1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+    
+function myFunction2() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "visible"; }
+    function myFunction3() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "hidden"; }
+    </script>
+    </body>
+</html>

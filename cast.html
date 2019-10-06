@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inês Pinheiro</title>
+    <link rel="stylesheet" href="cast.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+
+<div id="contentor2">
+
+        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
+        <img id="spread2" src="img/Cast/0.jpg">
+        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
+        <img onclick="myFunction3()"  id="botaofull2" src="img/close.svg">
+    </div>
+    
+<div id=topbar>
+    
+  <a id="link1" href="index.html">⬤</a>
+  <a id="link2" href="about.html">About</a>
+</div>
+
+<div id="primeiro"><div id="primeiroesq"></div><div id="primeirodir"></div></div>
+
+
+<div id="main">
+
+<div id="colunaesq">
+    <div id="contentor">
+        <img id="nav_button" class="left" onclick="prevPic()" src="img/setaesquerda.svg">
+        <img onclick="myFunction()" id="spread" src="img/Cast/0.jpg">
+        <img id="nav_button" class="right" onclick="nextPic()" src="img/setadireita.svg">
+        <img onclick="myFunction2()"  id="botaofull" src="img/fullscreen.svg">
+
+    </div>
+
+    </div>
+
+    
+<div id="colunadir">
+
+        <p><sup>/PT/</sup></p>
+
+    <p><i>Cast</i> é uma revista semestral que surge à volta de uma indexação dos indivíduos cuja presença, trabalho ou ideias quebram, de alguma forma, uma matriz rígida que define se a sua identidade é, ou não, validada pela sociedade. A palavra “cast” sugere a ideia de uma lista, mas também pode significar molde/forma.</p>
+
+    <p>Ao longo das várias (hipotéticas) edições, Cast apresenta as diferentes formas que esta ruptura pode tomar, associando cada uma a um fenômeno meteorológico singular. Desta forma, “We hope for better weather”, para que venha um tempo em que os indivíduos possam ser eles próprios sem restrições, onde a matriz de reconhecimento da sociedade valide todas as possíveis expressões, desde que estas não se baseiem num discurso de ódio.</p>
+    <p id="creditos">// Design, edição, conteúdo textual e visual:<br>Afonso Matos, Inês Pinheiro e Vitor Serra</p>
+    <br>
+    <p><sup>/ENG/</sup></p>
+
+    
+    <p><i>Cast</i> is a semestral magazine which aims to be an indexation of individuals whose presence, work or ideas break, somehow, a rigid matrix which defines whether their identities are recognized by society or not. It hints at the idea of a list but can also mean mold (as in shape).</p>
+    <p>Throughout the issues, <i>Cast</i> represents the different motions of this breakage, by associating each one with a singular meteorological phenomenon. As such, we hope for better weather, for those better days to arrive where individuals can be themselves without constraints, where society’s recognition matrix validates every expression that isn’t harmful or hateful.</p> 
+    
+        <p id="creditos">// Design, editing, writing and graphics:<br>Afonso Matos, Inês Pinheiro and Vitor Serra</p>
+</div> 
+    
+    
+    </div>
+    
+<script>
+       var target = document.getElementById("spread");
+        var numerodeimagens = 14;
+    
+        var counter = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/Cast/' + i + '.jpg';
+        }
+
+        function nextPic() {
+            counter += 1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+        
+        function prevPic() {
+            counter += -1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+
+    
+        var target2 = document.getElementById("spread2");
+        var numerodeimagens = 14;
+    
+        var counter2 = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/Cast/' + i + '.jpg';
+        }
+
+        function nextPic2() {
+            counter2 += 1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+        
+        function prevPic2() {
+            counter2 += -1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+    
+function myFunction2() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "visible"; }
+    function myFunction3() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "hidden"; }
+    </script>
+    </body>
+</html>
