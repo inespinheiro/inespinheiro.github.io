@@ -175,7 +175,25 @@ sup{
 #creditos {
     font-size: 12px;
 }
-
+#botao {
+    color: white;
+    font-size: 4vw;
+    right: 0;
+    width: 5%;
+    margin-left: 95%;
+    
+}
+#baixo {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    font-weight: 100;
+    margin-top: -5%;
+    
+}
 
 @media screen and (max-width: 900px) {
     
@@ -334,5 +352,14 @@ sup{
 #creditos {
     font-size: 12px;
 }   
+  
+#botao {
+   display: none;
+    
+}
+#baixo {
+    display: none;
+    
+}
     
 }
