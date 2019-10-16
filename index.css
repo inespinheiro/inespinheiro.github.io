@@ -142,7 +142,7 @@ sup{
   width: 100%;
     height: auto;
   z-index: 0;
- visibility: collapse;
+ display: none;
     
 }
 
@@ -265,7 +265,7 @@ sup{
 }
 
 #backgroundimg1 , #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9, #backgroundimg10{
-  display: none;
+  visibility: collapse;
     
 }
 }
