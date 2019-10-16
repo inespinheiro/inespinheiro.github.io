@@ -16,21 +16,19 @@ body {
     background-color: black;
 }
 #topbar {
-    height: 35px;
+    height: 55px;
     width: 100%;
     color: black;
-    font-size: 20px;
+    font-size: 1.5vw;
     background-color: white;
     margin: 0;
-    font-weight: 400;
+    top: 0;
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    -webkit-box-shadow: 0px 0px 9px 10px #FFFFFF; 
-    box-shadow: 0px 0px 9px 10px #FFFFFF;
     position: fixed;
-    z-index: 2;
-}
+    z-index: 5;
+} 
     
 a {
     color: black;
@@ -47,7 +45,7 @@ a:active {
 a:hover {
     color: black;
     text-decoration: none;
-    filter: blur(4px);
+    filter: blur(8px);
 }
 #link1 {
     width: 50%;
@@ -75,14 +73,14 @@ a:hover {
     }
     
     #primeiroesq {
-        background-image: url(img/IMG_3391.jpg);
+        background-image: url(img/IMG_3540_3.jpg);
         background-position: center;
         background-size: cover;
         height: 45vw;
         width: 50%;
     }
     #primeirodir {
-        background-image: url(img/IMG_3393.jpg);
+        background-image: url(img/IMG_3391.jpg);
             background-position: center;
         background-size: cover;
         height: 45vw;
@@ -94,9 +92,9 @@ a:hover {
     height: auto;
     flex-direction: column;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 3%;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 0;
     height: auto;
     z-index: 0;
@@ -126,9 +124,8 @@ a:hover {
     margin-right: auto;
     flex-direction: row;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
 }
-
 
 #contentor {
     display: flex;
@@ -146,7 +143,7 @@ a:hover {
 #contentor2 {
     visibility: hidden;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     height: 100%;
     width: 100%;
     margin-left: auto;
@@ -156,16 +153,17 @@ a:hover {
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     
+
 }
 
 #spread2 {
 
      position: relative;
     width: auto;
-    height: 80%;
+    height: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6%;
+    margin-top: 4%;
     margin-bottom: auto;
     -webkit-box-shadow: 0px 0px 20px 1px #000000; 
     box-shadow: 0px 0px 20px 1px #000000;
@@ -174,7 +172,7 @@ a:hover {
 #spread {
     position: relative;
     width: auto;
-    height: 30vw;
+    height: 35vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -220,6 +218,9 @@ a:hover {
 }
 
 
+
+
+
 #colunaesq {
     margin-right: auto;
     font-size: 15px;
@@ -255,6 +256,7 @@ a:hover {
 }
 #botaofull2:hover {
     filter: blur(4px);}
+
 
 #contacto {
     text-decoration: underline;
@@ -306,9 +308,9 @@ sup{
     font-size: 4vw;
     right: 0;
     width: 5%;
-    margin-left: 95%;
-    
+    margin-left: 95%;    
 }
+
 #baixo {
     display: flex;
     flex-direction: column;
@@ -318,28 +320,37 @@ sup{
     margin-bottom: 2%;
     font-weight: 100;
     margin-top: -5%;
-    
 }
+
+#main2 {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
 @media screen and (max-width: 900px) {
     
-    
-       
 #topbar {
-    height: 50px;
+    height: 47px;
     width: 100%;
     color: black;
-    font-size: 20px;
+    font-size: 6vw;
     background-color: white;
     margin: 0;
-    font-weight: 400;
+    top: 0;
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    -webkit-box-shadow: 0px 0px 9px 10px #FFFFFF; 
-    box-shadow: 0px 0px 9px 10px #FFFFFF;
-}
+    position: fixed;
+    z-index: 5;
+} 
  
-    #link1 {
+ #link1 {
     width: 50%;
     padding-left: 5%;
     filter: blur(2px);
@@ -374,6 +385,16 @@ sup{
     flex-direction: column;
     margin-top: 0;
 }
+    #main2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-top: 0;
+}
+
 
     #primeiro {
         display: flex;
@@ -396,6 +417,7 @@ sup{
     #segundo {
         margin-bottom: 5%;
         margin-top: 5%;
+        font-size: 18px;
     }
 a {
     color: black;
@@ -441,7 +463,7 @@ display: none;
 #spread {
     position: relative;
     width: auto;
-    height: 45vw;
+    height: 40vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -514,7 +536,7 @@ display: none;
     z-index: 0;
     color: white;
     margin-top: 0;
-    margin-bottom: 10%;
+    margin-bottom: 0;
 }
 sup{
     font-size: 3vw;

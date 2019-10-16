@@ -11,6 +11,14 @@
 </head>
     
 <body>
+
+<div id="contentor2">
+
+        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
+        <img id="spread2" src="img/jurnal3/0.jpg">
+        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
+        <img onclick="myFunction3()"  id="botaofull2" src="img/close.svg">
+    </div>
     
 <div id=topbar>
     
@@ -18,33 +26,98 @@
   <a id="link2" href="about.html">About</a>
 </div>
 
-    <div id="primeiro"><div id="primeiroesq"></div><div id="primeirodir"></div></div>
-    <div id="segundo"><div id="segundoesq"></div><div id="segundodir"></div></div>
-
 <div id="main">
 
 <div id="colunaesq">
-
+    <div id="contentor">
+        <img id="nav_button" class="left" onclick="prevPic()" src="img/setaesquerda.svg">
+        <img onclick="myFunction()" id="spread" src="img/jurnal3/0.jpg">
+        <img id="nav_button" class="right" onclick="nextPic()" src="img/setadireita.svg">
+        <img onclick="myFunction2()"  id="botaofull" src="img/fullscreen.svg">
 
     </div>
 
+    </div>
     
 <div id="colunadir">
 
         <p><sup>/PT/</sup></p>
 
-    <p>Design de várias edições do <i>Jur.nal</i>, a revista dos estudantes da AEFDUNL (Associação de Estudantes da Faculdade de Direito da Universidade Nova de Lisboa).</p>
+    <p>Design de várias edições do <i>Jur.nal</i>, a revista dos estudantes da AEFDUNL (Associação de Estudantes da Faculdade de Direito da Universidade Nova de Lisboa). Exemplo: Jur.nal nº.3</p>
     <p id="creditos">// Design:<br>Inês Pinheiro e Vitor Serra</p>
     
     <p><sup>/ENG/</sup></p>
 
-    <p>Design of several editions of <i>Jur.nal</i>, AEFDUNL's Students Magazine.</p>
+    <p>Design of several editions of <i>Jur.nal</i>, AEFDUNL's Students Magazine. Example: Jur.nal nº.3</p>
     <p id="creditos">// Design:<br>Inês Pinheiro e Vitor Serra</p>
     
 </div> 
     
     
     </div>
+ 
+<script>
+       var target = document.getElementById("spread");
+        var numerodeimagens = 6;
+    
+        var counter = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/jurnal3/' + i + '.jpg';
+        }
 
+        function nextPic() {
+            counter += 1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+        
+        function prevPic() {
+            counter += -1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+
+    
+        var target2 = document.getElementById("spread2");
+        var numerodeimagens = 6;
+    
+        var counter2 = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/jurnal3/' + i + '.jpg';
+        }
+
+        function nextPic2() {
+            counter2 += 1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+        
+        function prevPic2() {
+            counter2 += -1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+    
+function myFunction2() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "visible"; }
+    function myFunction3() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "hidden"; }
+    
+    
+    </script>
     </body>
 </html>
