@@ -5,62 +5,71 @@ html {
 }
 body {
     height: auto;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'ZCOOL XiaoWei', serif;
     font-size: 18px;
     height: 100%;
-    color: white;
+    color: red;
     margin: 0px;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: whitesmoke;
 }
+
 #topbar {
-    height: 55px;
-    width: 100%;
-    color: black;
-    font-size: 1.5vw;
-    background-color: white;
-    margin: 0;
-    top: 0;
+    height: 98%;
+    width: 55px;
+    color: red;   
+
+    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     position: fixed;
     z-index: 5;
+    text-transform: uppercase;
+    font-family: 'ZCOOL XiaoWei', serif;
+    margin-right: 0;
 } 
-     
+#tituloexpo {
+    font-size: 30px;
+text-transform: uppercase;}
+
 a {
-    color: black;
+    color: red;
     text-decoration: none;
 }
 a:visited {
-    color: black;
+    color: red;
     text-decoration: none;
 }
 a:active {
-    color: black;
+    color: red;
     text-decoration: none;
 }
 a:hover {
-    color: black;
+    color: red;
     text-decoration: none;
-    filter: blur(4px);
+    filter: blur(8px);
 }
 #link1 {
     width: 50%;
-    padding-left: 2%;
-    filter: blur(2px);
+    height: 20%;
+    margin-bottom: 30%;
     text-align: left;
     padding-top: 5px;
-
+    color: red;
 }
 
 #link2 {
     text-align: right;
     width: 50%;
-    height: 100%;
-    padding-right: 2%;
-    padding-top: 5px;
+    height: 20%;
+    margin-top: 30%;
+    color: red;
 }
 
 
@@ -104,7 +113,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 700px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -113,10 +122,11 @@ a:hover {
 
 }
 
+
 #contentor2 {
     visibility: hidden;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     height: 100%;
     width: 100%;
     margin-left: auto;
@@ -126,7 +136,6 @@ a:hover {
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     
-
 }
 
 #spread2 {
@@ -138,8 +147,6 @@ a:hover {
     margin-right: auto;
     margin-top: 6%;
     margin-bottom: auto;
-    -webkit-box-shadow: 0px 0px 20px 1px #000000; 
-    box-shadow: 0px 0px 20px 1px #000000;
 
 }
 #spread {
@@ -150,8 +157,7 @@ a:hover {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    -webkit-box-shadow: 0px 0px 20px 1px #000000; 
-    box-shadow: 0px 0px 20px 1px #000000;
+
 }
 
 #nav_button {
@@ -191,13 +197,15 @@ a:hover {
 }
 
 
-
-
 #colunaesq {
-       width: 72%;
+       width: 70%;
+        height: 37vw;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 0;
     display: flex;
-    flex-direction: row;    
+    flex-direction: column; 
+    background-color: black;
 }
 
 #botaofull {
@@ -226,14 +234,13 @@ a:hover {
 
 #colunadir {
     margin-right: 7%;
-    font-size: 15px;
-    font-weight: 400; 
+    font-size: 20px; 
     padding-top: 0;
     width: 20%;
     height: auto;
     z-index: 0;
     margin-left: 0;
-    color: white;
+    color: black;
 }
 sup{
     font-size: 12px;
@@ -242,19 +249,20 @@ sup{
     opacity: 0.5;
 }
 #creditos {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 
 @media screen and (max-width: 900px) {
     
-    
+   
+
 #topbar {
-    height: 47px;
+    height: 55px;
     width: 100%;
-    color: black;
-    font-size: 6vw;
-    background-color: white;
+    color: red;
+    font-size: 7vw;
+    background-color: whitesmoke;
     margin: 0;
     top: 0;
     text-decoration: none;
@@ -262,25 +270,30 @@ sup{
     flex-direction: row;
     position: fixed;
     z-index: 5;
+    writing-mode: horizontal-tb;
 } 
- 
-    #link1 {
-    width: 50%;
-    padding-left: 5%;
-    filter: blur(2px);
-    text-align: left;
-    padding-top: 10px;
+   
 
+
+#link1 {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: red;
 }
 
 #link2 {
     text-align: right;
     width: 50%;
-    height: 100%;
-    padding-right: 5%;
-    padding-top: 10px;
+    height: auto;
+    margin-top: 0;
+    color: red;
+        padding-top: 5px;
+    padding-right: 5px;
 }
-
 
 
 #main {
@@ -290,7 +303,7 @@ sup{
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 0;
 }
 
     #primeiro {
@@ -310,7 +323,6 @@ sup{
     #primeirodir {
        display: none;
     }
-
 
 
 
@@ -339,13 +351,18 @@ a:hover {
     height: 60vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 10%;
     pointer-events: all;
     overflow-y: hidden;
     margin-bottom: 0;
 
 }
 
+#contentor3 {
+    display: none;
+    
+
+}
 #contentor2 {
     display: none;
     
@@ -393,10 +410,9 @@ display: none;
 }
 
 
-
-
 #colunaesq {
     width: 100%;
+    height: auto;
     z-index: 0;
     display: flex;
     flex-direction: row;    
@@ -419,7 +435,7 @@ display: none;
     width: 80%;
     height: auto;
     z-index: 0;
-    color: white;
+    color: black;
     margin-top: 0;
     margin-bottom: 10%;
 }
@@ -430,7 +446,7 @@ sup{
     opacity: 0.5;
 }
 #creditos {
-    font-size: 12px;
+    font-size: 15px;
 }   
     
 }
