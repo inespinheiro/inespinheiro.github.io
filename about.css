@@ -79,75 +79,60 @@ a:hover {
 #main {
     display: flex;
     margin-top: 7%;
-    width: 90%;
+    width: 45%;
     height: 90vh;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
+    background-color: red;
+    color: white;
+    padding: 2%;
     margin-bottom: 2%;
+     -webkit-box-shadow: 0px 0px 28px 17px rgba(0,0,0,0.89);
+-moz-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
+box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
 }
 
-#colunaesq {
-    width: 15%;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;  
-    margin-top: 0;
-    height: auto;
 
-}
 #contacto {
     text-decoration: underline;
     margin-right: 3%;
-    font-size:  1.2vw;
+    font-size:  1.1vw;
+            color: white;
+
 }
 
-#colunaextra {
-        width: 40%;
-}
 
 
 #pass {
-    width: 100%;
-    -webkit-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
--moz-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
+    width: 15%;
+    -webkit-box-shadow: 0px 0px 28px 17px rgba(255,255,255,0.89);
+-moz-box-shadow: 0px 0px 20px 12px rgba(255,255,255,0.89);
+box-shadow: 0px 0px 20px 12px rgba(255,255,255,0.89);
 }
 #pass2{
-    margin-left: 40%;
+    margin-left: 15%;
     margin-top: 20%;
-    width: 50%;
-    -webkit-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
--moz-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
-box-shadow: 0px 0px 28px 17px rgba(255,0,0,0.89);
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 28px 17px rgba(255,255,255,0.89);
+-moz-box-shadow: 0px 0px 20px 12px rgba(255,255,255,0.89);
+box-shadow: 0px 0px 20px 12px rgba(255,255,255,0.89);
 }
 
-#colunadir {
-    font-size: 1.2vw;
-    padding-top: 0;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: 40%;
-    height: auto;
-    z-index: 0;
-    color: red;
-    margin-top: 0; 
-    margin-left: 5%;
-    font-family: regular;
 
-}
 sup{
     font-size: 1.2vw;
     text-transform: uppercase;
     font-weight: 400;
-    color: black;
-    opacity: 0.5;
+    color: white;
+    opacity: 0.7;
     font-family: 'ZCOOL XiaoWei', serif;
 
 }
 #creditos {
     font-size: 1.2vw;
+        color: white;
 }
 
 
@@ -227,17 +212,11 @@ a:hover {
     flex-direction: column;
     margin-top: 25%;
         box-shadow: none;
+        background-color: whitesmoke;
+    color: red;
 }
 
-#colunaesq {
-    width: 30%;
-    z-index: 0;
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-    margin-left: 0;
 
-}
 
 
 
@@ -262,18 +241,7 @@ box-shadow: 0px 0px 20px 12px rgba(255,0,0,0.89);
 }
 
 
-#colunadir {
-    font-size: 4.5vw;
-    padding-top: 0;
-    padding-right: 10%;
-    width: 95%;
-    height: auto;
-    z-index: 0;
-    color: red;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
     #contacto {
         margin-top: 10%;
         text-decoration: underline;
@@ -287,9 +255,10 @@ box-shadow: 0px 0px 20px 12px rgba(255,0,0,0.89);
         width: 100%;
     }
 sup{
-    font-size: 3vw;
+    font-size: 5vw;
     text-transform: uppercase;
-    opacity: 0.5;
+    opacity: 1;
+    color: red;
 }
 #creditos {
     font-size: 15px;
