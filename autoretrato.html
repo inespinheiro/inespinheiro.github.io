@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inês Pinheiro</title>
+    <link rel="stylesheet" href="autoretrato.css">
+    <link rel="shortcut icon" href="img/icon.jpg" />
+
+</head>   
+<body>
+<div id="contentor2">
+
+        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
+        <img id="spread2" src="img/autoretrato/0.jpg">
+        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
+        <img onclick="myFunction3()"  id="botaofull2" src="img/close.svg">
+    </div>
+    
+
+<div id=leftbar>
+  
+    <a id="home" href="index.html">■</a>
+    <p id="titulo">Auto-Retrato</p>
+    <p id="subtitulo">AI Fiction<br>(04/2020)</p>
+   <div id="img1"> <img id="img1" src="img/backgroundauto.jpg";>
+ </div>
+    <p id="descricao">Auto-Retrato (Self Portrait) is a verbal and visual self-representation written entirely in my phone’s messaging app with Android’s predictive keybord (next word prediciton). The process consisted in me writing the first word of each sentence and completing it by chosing one of the keyboar's suggestions. The original text is written in Portuguese. </p>
+
+    </div>
+    
+   
+
+<div id="main">
+          
+  <div loading="lazy" id="contentor">
+        <img id="nav_button" class="left" onclick="prevPic()" src="img/setaesquerda.svg">
+        <img onclick="myFunction()" id="spread" src="img/autoretrato/0.jpg">
+        <img id="nav_button" class="right" onclick="nextPic()" src="img/setadireita.svg">
+        <img onclick="myFunction2()"  id="botaofull" src="img/fullscreen.svg">
+    </div>
+    
+   <p id="descricao2"><i>(translated excerpts)<br>I usually have one allergy at a time, but today will be different. It's true that I still have cellulite, I really don’t understand why this keeps happening. (...) What a good way to enjoy humanity! At least I have the will to live at the same house. Thanks Patricia, lovely migraine! Great days will come. I usually send a text message and everything is fine. Last night I saw your cancer rising. (...) There’s always someone left to pay. One time I got really nostalgic, heard a story about making decisions and I understood what you sent me the other day. Is it true that there are no breaks at all? (...) At home we have spaces between the sentences. I don’t want to be with you anymore, that is so last year... There is always someone who can understand how I made such a mess. (...) Today it wasn’t that important to do something. I’ve already took notes about this and I understood, thank you. (...) Sometimes I’m ashamed to say that I’m a cute and simple book, it doesen’t bother me but some people can be really nasty. (...) Yes, I’ve made a mess at home and I’m not sorry! I’m crazy but I can’t belive that. (...) Last night there were two women counting people on the train. I don't have any classes this week and she didn’t even tag me or something!</i></p>
+    
+   <p id="descricao3">Auto-Retrato (Self Portrait) is a verbal and visual self-representation written entirely in my phone’s messaging app with Android’s predictive keybord (next word prediciton). The process consisted in me writing the first word of each sentence and completing it by chosing one of the keyboar's suggestions. The original text is written in Portuguese. </p>
+    
+    <p id="descricao4"><i>(translated excerpts)<br>I usually have one allergy at a time, but today will be different. It's true that I still have cellulite, I really don’t understand why this keeps happening. (...) What a good way to enjoy humanity! At least I have the will to live at the same house. Thanks Patricia, lovely migraine! Great days will come. I usually send a text message and everything is fine. Last night I saw your cancer rising. (...) There’s always someone left to pay. One time I got really nostalgic, heard a story about making decisions and I understood what you sent me the other day. Is it true that there are no breaks at all? (...) At home we have spaces between the sentences. I don’t want to be with you anymore, that is so last year... There is always someone who can understand how I made such a mess. (...) Today it wasn’t that important to do something. I’ve already took notes about this and I understood, thank you. (...) Sometimes I’m ashamed to say that I’m a cute and simple book, it doesen’t bother me but some people can be really nasty. (...) Yes, I’ve made a mess at home and I’m not sorry! I’m crazy but I can’t belive that. (...) Last night there were two women counting people on the train. I don't have any classes this week and she didn’t even tag me or something!</i></p>
+    </div>
+
+    
+<script>
+       var target = document.getElementById("spread");
+        var numerodeimagens = 8;
+    
+        var counter = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/autoretrato/' + i + '.jpg';
+        }
+
+        function nextPic() {
+            counter += 1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+        
+        function prevPic() {
+            counter += -1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+
+    
+        var target2 = document.getElementById("spread2");
+        var numerodeimagens = 8;
+    
+        var counter2 = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/autoretrato/' + i + '.jpg';
+        }
+
+        function nextPic2() {
+            counter2 += 1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+        
+        function prevPic2() {
+            counter2 += -1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+    
+function myFunction2() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "visible"; }
+    function myFunction3() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "hidden"; }
+    
+    
+ 
+    </script>
+    </body>
+</html>

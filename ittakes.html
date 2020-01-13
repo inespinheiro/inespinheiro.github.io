@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inês Pinheiro</title>
+    <link rel="stylesheet" href="ittakes.css">
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icon.jpg" />
+
+</head>   
+<body>
+<div id="contentor2">
+
+        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
+        <img id="spread2" src="img/ittakes/0.jpg">
+        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
+        <img onclick="myFunction3()"  id="botaofull2" src="img/close.svg"></div>
+    
+        <a id="home2" href="http://ittakesseveralminutes.belasartes.ulisboa.pt">■</a>
+    <a id="home3" href="http://www.instagram.com/ittakesseveralminutes">■</a>
+<div id=leftbar>
+  
+    <a id="home" href="index.html">■</a>
+    <p id="titulo">It Takes Several Minutes For The Eyes To Adjust To The Dark</p>
+    <p id="subtitulo">Graduate Exhibition<br>(10/2019)<br>Fine Arts Gallery, Lisbon<br>Reality, Design and Fiction<br>Communication Design</p>
+   <div id="img1"> <img id="img1" src="img/backgroundittakes.jpg";>
+ </div>
+    <p id="descricao">In this post-digital era, reality and fiction have been diluted. The expression of this lack of definition isn't limited to just creative and artistic endeavours, but is often weaponized by various power structures, whether formal or informal. This instrumentalization deconstructs core values such as democracy, individual and colective identity, ethnicity, and other fundamental principles of our society.<br>
+Before this current and 'desirable' identity crisis, design always worked with and for reality. Its objects belong, circulate, and (re)construct reality. The frailty of the majority of communication design objects also contributes to this idea of a practice that 'serves' the present. In short, the inevitable shock with reality defines the social status of design. If 'design and reality' is a (false) truism, "design and fiction" might appear to be an improbable hypothesis. In the face of historical, legitimized practices—such as literature or cinema—design now reclaims its place in fiction. At the end of another cycle of study in communication design at the Faculty of Fine Artes Ulisboa, we have gone over the dilemmas, the contradictions and the themes that pertain to contemporaneity. Through the projects produced this year, the students have either commented, critiqued or essayed reality, or turned it into fiction. We've steered very close to cinema, literature, mythology, but also to the hard truths of a reality that insists on presenting itself, suprising us, and deconstructing itself before our eyes.</p>
+    <p id="contact"> <a id="contact" href="http://ittakesseveralminutes.belasartes.ulisboa.pt/sobre.html">Website</a>   <br>
+  <a id="contact" href="https://www.facebook.com/ittakesseveralminutes/">Facebook</a><br>
+      <a id="contact" href="https://www.instagram.com/ittakesseveralminutes/">Instagram</a></p><br>
+    </div>
+    
+    <div id="main">
+    <div id="hero"></div>
+   <div id="baixo">
+        <div id="contentor">
+        <img id="nav_button" class="left" onclick="prevPic()" src="img/setaesquerda.svg">
+        <img onclick="myFunction()" id="spread" src="img/ittakes/0.jpg">
+        <img id="nav_button" class="right" onclick="nextPic()" src="img/setadireita.svg">
+        <img onclick="myFunction2()"  id="botaofull" src="img/fullscreen.svg">
+       </div>
+    </div>
+     <div id="proom"><div id="linha"><div id="img2"></div><div id="img3"></div></div>
+    <div id="linha1"><div id="img6"></div><div id="lado"><div id="img7"></div><div id="img8"></div></div></div>
+        <div id="linha"><div id="img4"></div><div id="img5"></div></div>
+        </div>
+     <p id="descricao2">In this post-digital era, reality and fiction have been diluted. The expression of this lack of definition isn't limited to just creative and artistic endeavours, but is often weaponized by various power structures, whether formal or informal. This instrumentalization deconstructs core values such as democracy, individual and colective identity, ethnicity, and other fundamental principles of our society.<br>
+Before this current and 'desirable' identity crisis, design always worked with and for reality. Its objects belong, circulate, and (re)construct reality. The frailty of the majority of communication design objects also contributes to this idea of a practice that 'serves' the present. In short, the inevitable shock with reality defines the social status of design. If 'design and reality' is a (false) truism, "design and fiction" might appear to be an improbable hypothesis. In the face of historical, legitimized practices—such as literature or cinema—design now reclaims its place in fiction. At the end of another cycle of study in communication design at the Faculty of Fine Artes Ulisboa, we have gone over the dilemmas, the contradictions and the themes that pertain to contemporaneity. Through the projects produced this year, the students have either commented, critiqued or essayed reality, or turned it into fiction. We've steered very close to cinema, literature, mythology, but also to the hard truths of a reality that insists on presenting itself, suprising us, and deconstructing itself before our eyes.</p>
+    <p id="contact2"> <a id="contact2" href="http://ittakesseveralminutes.belasartes.ulisboa.pt/sobre.html">Website</a>   <br>
+  <a id="contact2" href="https://www.facebook.com/ittakesseveralminutes/">Facebook</a><br>
+      <a id="contact2" href="https://www.instagram.com/ittakesseveralminutes/">Instagram</a></p><br></div>
+      
+        
+<script>
+       var target = document.getElementById("spread");
+        var numerodeimagens = 12;
+    
+        var counter = 0;
+        var img = new Array(12);
+        for (var i = 0; i < 12; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/ittakes/' + i + '.jpg';
+        }
+
+        function nextPic() {
+            counter += 1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+        
+        function prevPic() {
+            counter += -1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+
+    
+        var target2 = document.getElementById("spread2");
+        var numerodeimagens = 12;
+    
+        var counter2 = 0;
+        var img = new Array(12);
+        for (var i = 0; i < 12; i++) {
+            img[i] = new Image();
+            img[i].src = 'img/ittakes/' + i + '.jpg';
+        }
+
+        function nextPic2() {
+            counter2 += 1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+        
+        function prevPic2() {
+            counter2 += -1;
+            if (counter2 > img.length - 1) {
+                counter2 = 0;
+            }
+            target2.src = img[counter2].src;
+        }
+    
+function myFunction2() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "visible"; }
+    function myFunction3() {  
+var x = document.getElementById("contentor2");
+x.style.visibility = "hidden"; }
+    </script>
+    </body>
+</html>

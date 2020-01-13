@@ -1,0 +1,248 @@
+html {
+    height: 100%;
+    width: 100%;
+
+}
+body {
+    height: auto;
+    font-family: 'Big Caslon';
+    font-size: 18px;
+    height: 100%;
+    color: black;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f4ee;
+
+}
+@font-face {
+    font-family: Big Caslon;
+    src: url(fonts/bigcaslon.ttf);
+}
+@font-face {
+    font-family: Happy Times;
+    src: url(fonts/happytimes.otf);
+}
+@font-face {
+    font-family: Berthold;
+    src: url(fonts/berthold.otf);
+}
+
+
+#leftbar{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    color: black;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    color: red;
+    font-size: 3vw;
+}
+#home:active {
+    color: red;
+}
+
+#home:hover {
+    filter: blur(8px);
+}
+
+#numbers {
+    font-family: 'Happy Times'
+}
+
+#titulo {
+    font-size: 1.6vw;
+    color: red;
+}
+#subtitulo {
+    font-family: 'Berthold';
+    
+}
+
+#img1 {
+    width: 70%;
+    margin-top: auto;
+    display: block;
+}
+#descricao {
+    font-family: 'Berthold';
+    width: 90%;
+    
+}
+#descricao2 {
+    display: none;
+}
+
+#contact {
+    font-family: 'Big Caslon';
+    color: red;
+}
+#contact:active {
+    color: red;
+}
+#main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    filter: blur(8px);
+    color: red;
+}
+a:active {
+    text-decoration: none;
+      color: black;
+}
+
+#lista {
+    font-family: 'Big Caslon';
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 1.6vw;
+}
+#des {
+    font-family: 'Berthold';
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+#backgroundimg1, #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9, #backgroundimg10 {
+    display: none;
+    margin-left: 70%;
+    margin-top: 10%;
+    z-index: 50;
+    position: absolute;
+    width: 10%;
+}
+#home2{
+    margin-left: 30%;
+    margin-top: 35%;
+    z-index: 50;
+    position: absolute;
+    color: red;
+    font-size: 3vw;
+}
+#home3{
+    margin-left: 85%;
+    margin-top: 6%;
+    z-index: 50;
+    position: absolute;
+    color: red;
+    font-size: 3vw;
+}
+#contact2{
+    display: none;
+        font-family: 'Big Caslon';
+    color: red;
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    body {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+    #leftbar{
+    width: 90%;
+    font-size: 4vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+}
+    
+#home {
+    display: none;
+}
+
+#titulo {
+
+    font-size: 6vw;
+    color: red;
+}
+#subtitulo {
+font-size: 4vw;
+
+    
+}
+    #home2 {
+        display: none;
+    }
+    #home3 {
+        display: none;
+    }
+
+#img1 {
+    margin-bottom: auto;
+    width: 40%;
+    margin-top: auto;
+    display: block;
+            margin-left: auto;
+        margin-right: auto;
+}
+#descricao2 {
+    display: flex;
+    font-family: 'Berthold';
+    width: 100%;
+            margin-left: auto;
+        margin-right: auto;
+    text-align: center;
+    margin-top: 20%;
+    
+}
+    #descricao {
+        display:none;
+    }
+    #contact {
+        display: none;
+    }
+    #contact2 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-size: 4vw;
+        
+    }
+
+ #main {
+     height: auto;
+     margin-top: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+#lista {
+    margin-top: 20%;
+    font-size: 7vw;
+    text-align: center;
+    line-height: 6.5vw;
+}
+#des {
+    font-family: 'Berthold';
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+    #backgroundimg1, #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9 {
+    display: none;
+    visibility: hidden;
+}
+}
