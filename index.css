@@ -160,7 +160,7 @@ a:active {
     #leftbar{
     width: 90%;
     font-size: 4vw;
-    height: 35vw;
+    height: auto;
     display: flex;
     flex-direction: column;
         text-align: center;
@@ -241,7 +241,7 @@ font-size: 4vw;
     font-size: 4vw;
     text-transform: uppercase;
 }
-    #backgroundimg1, #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9 {
+    #backgroundimg1, #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9, #backgroundimg10 {
     display: none;
     visibility: hidden;
 }
