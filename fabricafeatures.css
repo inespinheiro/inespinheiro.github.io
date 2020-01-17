@@ -54,7 +54,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+#collab{
+    font-family: 'Berthold';
+    color: red;
+}
 #home {
     color: red;
     font-size: 3vw;

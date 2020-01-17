@@ -150,7 +150,7 @@ a:active {
 
 @media screen and (max-width: 900px) {
     
-    body {
+body {
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -160,10 +160,10 @@ a:active {
     #leftbar{
     width: 90%;
     font-size: 4vw;
-    height: auto;
+    height: 20vh;
     display: flex;
     flex-direction: column;
-        text-align: center;
+    text-align: center;
         margin-left: auto;
         margin-right: auto;
 }
@@ -198,7 +198,7 @@ font-size: 4vw;
         margin-right: auto;
 }
 #descricao2 {
-    display: flex;
+    display: block;
     font-family: 'Berthold';
     width: 100%;
             margin-left: auto;

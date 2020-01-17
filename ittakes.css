@@ -66,7 +66,10 @@ body {
 #home:hover {
     filter: blur(8px);
 }
-
+#collab{
+    font-family: 'Berthold';
+    color: red;
+}
 #numbers {
     font-family: 'Happy Times'
 }

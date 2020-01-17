@@ -54,7 +54,10 @@ body {
 #home:active {
     color: red;
 }
-
+#collab{
+    font-family: 'Berthold';
+    color: red;
+}
 #home:hover {
     filter: blur(8px);
 }

@@ -73,6 +73,10 @@ body {
     font-family: 'Berthold';
     
 }
+#collab{
+    font-family: 'Berthold';
+    color: red;
+}
 
 #img1 {
     width: 70%;
