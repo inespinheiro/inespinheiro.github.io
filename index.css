@@ -167,9 +167,9 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 5%;
+    margin-left: auto;
     margin-right: auto;
-        position: absolute;
+
 
 }
     
@@ -177,7 +177,6 @@ body {
     width: 90%;
     font-size: 4vw;
     height: auto;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     text-align: center;
