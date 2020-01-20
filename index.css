@@ -147,6 +147,9 @@ a:active {
     color: red;
 
 }
+#leftbar2 {
+    display: none;
+}
 
 @media screen and (max-width: 900px) {
     
@@ -160,14 +163,27 @@ body {
     #leftbar{
     width: 90%;
     font-size: 4vw;
-    height: 20vh;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: auto;
+        position: absolute;
+
+}
+    
+    #leftbar2 {
+    width: 90%;
+    font-size: 4vw;
+    height: auto;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     text-align: center;
         margin-left: auto;
         margin-right: auto;
-}
-    
+    }
 #home {
     display: none;
 }
@@ -223,11 +239,12 @@ font-size: 4vw;
 
  #main {
      height: auto;
-     margin-top: 5%;
-    width: 90%;
+     margin-top: 25vh; 
+     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 5%;
+     z-index: 0;
 }
 
 #lista {
