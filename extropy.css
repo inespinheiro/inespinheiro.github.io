@@ -179,7 +179,7 @@ a:active {
 #spread {
     position: relative;
     width: auto;
-    height: 30vw;
+    height: 35vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -189,7 +189,7 @@ a:active {
 }
 
 #nav_button {
-    height: 8vw;
+    height: 5vw;
     width: auto;
     margin-top: auto;
     margin-bottom: auto;

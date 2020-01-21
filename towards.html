@@ -9,21 +9,13 @@
 
 </head>   
 <body>
-<div id="contentor2">
-
-        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
-        <img id="spread2" src="img/manual/0.jpg">
-        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
-        <img onclick="myFunction3()"  id="botaofull2" src="img/close.svg">
-    </div>
-    
 <a id="home2" href="http://www.towardstheomegapoint.github.io">■</a>
 
 <div id=leftbar>
   
     <a id="home" href="index.html">■</a>
     <p id="titulo">Towards the Omega Point</p>
-    <p id="subtitulo">Design Fiction<br>(05/2019)</p>
+    <p id="subtitulo">Design Fiction<br>(04-06/2019)</p>
         <p id="collab">With Afonso Matos and Vítor Serra</p>
 
    <div id="img1"> <img id="img1" src="img/backgroundtowards.jpg";>
@@ -68,19 +60,35 @@ Would the world worry about you?</p>
 </div> 
 
     </div>
-           <div id="linha1"></div>
-
-    <div id="proom"><div id="linha"><div id="img2"></div><div id="img3"></div></div>
-        <div id="linha"><div id="img4"></div><div id="img5"></div></div>
-
-
+  <div id="pr">
+        <img id="nav_button3" class="left3" onclick="prevPic3()" src="img/setaesquerda2.svg">
+        <img id="spread3" src="img/pr/0.jpg">
+        <img id="nav_button3" class="right3" onclick="nextPic3()" src="img/setadireita2.svg">
     </div>
-  <div loading="lazy" id="contentor">
+    <p id="imp">Project Room/Installation</p>
+    
+  <div id="contentor">
         <img id="nav_button" class="left" onclick="prevPic()" src="img/setaesquerda.svg">
-        <img onclick="myFunction()" id="spread" src="img/manual/0.jpg">
+        <img id="spread" src="img/manual/0.jpg">
         <img id="nav_button" class="right" onclick="nextPic()" src="img/setadireita.svg">
-        <img onclick="myFunction2()"  id="botaofull" src="img/fullscreen.svg">
     </div>
+    <p id="imp">Production Manual</p>
+    
+    
+  <div id="codex">
+        <img id="nav_button2" class="left2" onclick="prevPic2()" src="img/setaesquerda.svg">
+        <img id="spread2" src="img/codex/0.jpg">
+        <img id="nav_button2" class="right2" onclick="nextPic2()" src="img/setadireita.svg">
+    </div>
+    
+     <p id="imp">The Codex, a compendium of classified knowledge regarding Towards the Omega Point's society.</p>
+
+
+
+    
+
+    
+    
  <p id="descricao2">Towards the Omega Point is a speculative design project that pictures a scenario where humankind evolved to collectivize thought. In this alternative reality, humanity has already surpassed the state
 of primal individualism: human beings consider the collective wellbeing and the ultimate goal of the species in every thought, action, movement and decision they make. The advancement of humanity is headed towards the
 Omega Point—a moment of convergence of every mind and every body. Each human is a unit. No one is unreplaceable. Would the world worry about you?</p>
@@ -89,12 +97,13 @@ Omega Point—a moment of convergence of every mind and every body. Each human i
 
     
 <script>
-       var target = document.getElementById("spread");
-        var numerodeimagens = 18;
+           
+    var target = document.getElementById("spread");
+    var numerodeimagens = 18;
     
         var counter = 0;
-        var img = new Array(numerodeimagens);
-        for (var i = 0; i < numerodeimagens; i++) {
+        var img = new Array(18);
+        for (var i = 0; i < 18; i++) {
             img[i] = new Image();
             img[i].src = 'img/manual/' + i + '.jpg';
         }
@@ -114,43 +123,58 @@ Omega Point—a moment of convergence of every mind and every body. Each human i
             }
             target.src = img[counter].src;
         }
-
-    
-        var target2 = document.getElementById("spread2");
-        var numerodeimagens = 18;
+ 
+    var target2 = document.getElementById("spread2");
+    var numerodeimagens = 53;
     
         var counter2 = 0;
-        var img = new Array(numerodeimagens);
-        for (var i = 0; i < numerodeimagens; i++) {
-            img[i] = new Image();
-            img[i].src = 'img/manual/' + i + '.jpg';
+        var img2 = new Array(53);
+        for (var i = 0; i < 53; i++) {
+            img2[i] = new Image();
+            img2[i].src = 'img/codex/' + i + '.jpg';
         }
 
         function nextPic2() {
             counter2 += 1;
-            if (counter2 > img.length - 1) {
+            if (counter2 > img2.length - 1) {
                 counter2 = 0;
             }
-            target2.src = img[counter2].src;
+            target2.src = img2[counter2].src;
         }
         
         function prevPic2() {
             counter2 += -1;
-            if (counter2 > img.length - 1) {
+            if (counter2 > img2.length - 1) {
                 counter2 = 0;
             }
-            target2.src = img[counter2].src;
+            target2.src = img2[counter2].src;
         }
-    
-function myFunction2() {  
-var x = document.getElementById("contentor2");
-x.style.visibility = "visible"; }
-    function myFunction3() {  
-var x = document.getElementById("contentor2");
-x.style.visibility = "hidden"; }
-    
-    
  
+    var target3 = document.getElementById("spread3");
+    var numerodeimagens = 7;
+    
+        var counter3 = 0;
+        var img3 = new Array(7);
+        for (var i = 0; i < 7; i++) {
+            img3[i] = new Image();
+            img3[i].src = 'img/pr/' + i + '.jpg';
+        }
+
+        function nextPic3() {
+            counter3 += 1;
+            if (counter3 > img3.length - 1) {
+                counter3 = 0;
+            }
+            target3.src = img3[counter3].src;
+        }
+        
+        function prevPic3() {
+            counter3 += -1;
+            if (counter3 > img3.length - 1) {
+                counter3 = 0;
+            }
+            target3.src = img3[counter3].src;
+        }
     </script>
     </body>
 </html>

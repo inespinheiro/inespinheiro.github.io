@@ -182,7 +182,7 @@ a:active {
 #spread {
     position: relative;
     width: auto;
-    height: 30vw;
+    height: 35vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -192,7 +192,7 @@ a:active {
 }
 
 #nav_button {
-    height: 100px;
+    height: 50px;
     width: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -282,6 +282,38 @@ a:active {
     background-repeat: no-repeat;
     background-size: auto;
 }
+
+#cd {
+    width: 60%;
+    height: 10vw;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#imp {
+    font-family: 'Berthold';
+    font-size: 0.95vw;
+    text-align: center;
+}
+
+#imp2 {
+    font-family: 'Berthold';
+    font-size: 0.95vw;
+    text-align: center;
+}
+
+#video1 {
+    display: flex;
+    width: 75%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    height: 35vw;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 900px) {
     
     body {
@@ -390,7 +422,25 @@ font-size: 4vw;
     #botaofull {
         display: none;
     }
-    #videos {
-        flex-direction: column;
-        margin-top: 5%;
-    }}
+ #cd {
+  display: none;
+}
+
+
+#imp {
+    display: none;
+}
+
+    #imp2 {
+        display: none;
+    }
+#video1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    height: 30vw;
+    flex-direction: column;
+}}
