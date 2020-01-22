@@ -1,0 +1,441 @@
+html {
+    height: 100%;
+    width: 100%;
+
+}
+body {
+    height: auto;
+    font-family: 'Big Caslon';
+    font-size: 18px;
+    color: black;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f4ee;
+
+}
+@font-face {
+    font-family: Big Caslon;
+    src: url(fonts/bigcaslon.ttf);
+}
+@font-face {
+    font-family: Happy Times;
+    src: url(fonts/happytimes.otf);
+}
+@font-face {
+    font-family: Berthold;
+    src: url(fonts/berthold.otf);
+}
+#home2{
+    margin-left: 40%;
+    margin-top: 40%;
+    z-index: 50;
+    position: absolute;
+    color: red;
+    font-size: 3vw;
+}
+#descricao4 {
+    display: none;
+}
+#leftbar{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    color: black;
+    font-size: 1vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+#descricao3 {
+    display: none;
+}
+
+#home {
+    color: red;
+    font-size: 3vw;
+}
+#home:active {
+    color: red;
+}
+
+#home:hover {
+    filter: blur(8px);
+}
+
+#numbers {
+    font-family: 'Happy Times'
+}
+
+#titulo {
+    font-size: 1.6vw;
+    color: red;
+}
+#subtitulo {
+    font-family: 'Berthold';
+    
+}
+
+#img1 {
+    width: 70%;
+    margin-top: auto;
+    display: block;
+}
+#descricao {
+    font-family: 'Berthold';
+    width: 100%;
+    
+}
+#descricao2 {
+    font-family: 'Berthold';
+    width: 98%;
+    font-size: 0.90vw;
+    text-align: left;
+    text-indent: 3%;
+    
+}
+#descricaoposter {
+    width: 70%;
+    font-family: 'Berthold';
+    font-size: 0.90vw;
+}
+#text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#imagem {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+#transcricao{
+        font-family: 'Berthold';
+    width: 95%;
+    font-size: 0.90vw;
+    text-align: left;
+    margin-left: 3%;
+}
+#titulo2 {
+    font-size: 1.3vw;
+    color: black;
+}
+#subtitulo2 {
+    text-decoration: underline;
+}
+#contact {
+     font-family: 'Big Caslon';
+    color: red;
+    font-size: 1.5vw;
+}
+#contact:active {
+    color: red;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    filter: blur(8px);
+    color: red;
+}
+a:active {
+    text-decoration: none;
+      color: black;
+}
+
+
+#main {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+#contentor {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 5%;
+    height: 38vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    pointer-events: all;
+    overflow-y: hidden;
+    background-color: black;
+    
+
+}
+#main2 {
+    display: flex;
+    flex-direction: row;
+}
+#1{
+    width: 50%;
+}
+#contentor2 {
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    
+}
+
+#spread2 {
+
+     position: relative;
+    width: auto;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: auto;
+    -webkit-box-shadow: 0px 0px 20px 1px #000000; 
+    box-shadow: 0px 0px 20px 1px #000000;
+
+}
+
+#spread {
+    position: relative;
+    width: auto;
+    height: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    -webkit-box-shadow: 0px 0px 20px 1px #000000; 
+    box-shadow: 0px 0px 20px 1px #000000;
+}
+
+#nav_button {
+    height: 5vw;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#nav_button:hover {
+    filter: blur(4px);
+
+}
+
+#nav_button2 {
+    height: 100px;
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#nav_button2:hover {
+    filter: blur(4px);
+
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+
+
+
+#botaofull {
+    width: auto;
+    z-index: 1;
+    margin-left: -4%;
+    margin-right: 4%;
+    height: 3vw;
+    cursor: pointer;
+}
+#botaofull:hover {
+    filter: blur(4px);}
+#botaofull2 {
+    width: auto;
+    z-index: 1;
+    margin-left: -4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    height: 5%;
+    cursor: pointer;
+}
+#botaofull2:hover {
+    filter: blur(4px);}
+
+
+@media screen and (max-width: 900px) {
+    
+    body {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+    #leftbar{
+    width: 90%;
+    font-size: 4vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+}
+    
+#home {
+    display: none;
+}
+
+#titulo {
+
+    font-size: 6vw;
+    color: red;
+}
+#subtitulo {
+font-size: 4vw;
+
+    
+}
+    #home2 {
+        display: none;
+    }
+    #home3 {
+        display: none;
+    }
+
+#img1 {
+    margin-bottom: auto;
+    width: 60%;
+    margin-top: auto;
+    display: block;
+            margin-left: auto;
+        margin-right: auto;
+}
+
+    
+
+    #descricao {
+        display:none;
+    }
+    #contact {
+        display: none;
+    }
+    #contact2 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-size: 5vw;
+        color: red;
+        
+    }
+
+ #main {
+     height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+#lista {
+    font-size: 7vw;
+    text-align: center;
+    line-height: 6.5vw;
+}
+#des {
+    font-family: 'Berthold';
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+    #hero {
+        height: 60vw;
+    }
+
+#nav_button{
+    height: 10vw;
+
+    
+}
+        #contentor2 {
+        display: none;
+    }
+    
+    #botaofull {
+        display: none;
+    }
+    #videos {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+
+#descricao2 {
+    font-family: 'Berthold';
+    width: 97%;
+    font-size: 4vw;
+    text-align: left;
+    text-indent: 3%;
+    margin-left: 3%;
+    
+}
+    #transcricao {
+
+    width: 97%;
+    font-size: 4vw;
+
+    
+}
+#descricaoposter {
+    width: 60%;
+    font-family: 'Berthold';
+    font-size: 3vw;
+        margin-left: auto;
+    margin-right: auto;
+}
+#text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+}
+#imagem {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+}
+    #main2 {
+        display: flex;
+    flex-direction: column;
+    }
+
+#titulo2 {
+    font-size: 5vw;
+    color: black;
+}
+#subtitulo2 {
+    text-decoration: underline;
+        font-size: 4vw;
+}}
