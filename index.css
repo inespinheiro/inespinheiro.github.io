@@ -5,28 +5,25 @@ html {
 }
 body {
     height: auto;
-    font-family: 'Big Caslon';
-    font-size: 18px;
+    font-family: 'arial';
+    font-size: 16px;
     height: 100%;
-    color: black;
+    color: blue;
     margin: 0px;
     display: flex;
     flex-direction: row;
-    background-color: #f2f4ee;
+    background-color: white;
 
 }
 @font-face {
-    font-family: Big Caslon;
-    src: url(fonts/bigcaslon.ttf);
+    font-family: arial;
+    src: url(fonts/arial.ttf);
 }
 @font-face {
-    font-family: Happy Times;
-    src: url(fonts/happytimes.otf);
+    font-family: text;
+    src: url(fonts/Minipax-Regular.ttf);
 }
-@font-face {
-    font-family: Berthold;
-    src: url(fonts/berthold.otf);
-}
+
 
 
 #leftbar{
@@ -34,58 +31,56 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
-    color: black;
-    font-size: 1vw;
-    height: 45vw;
+    font-size: 0.9vw;
+    height: 60%;
     display: flex;
     flex-direction: column;
 }
 
 #home {
-    color: red;
-    font-size: 3vw;
+    color: blue;
+    text-decoration: underline;
 }
 #home:active {
-    color: red;
+    color: blue;
 }
 
 #home:hover {
     filter: blur(8px);
 }
 
-#numbers {
-    font-family: 'Happy Times'
-}
+
 
 #titulo {
     font-size: 1.6vw;
-    color: red;
 }
 #subtitulo {
-    font-family: 'Berthold';
+    font-family: 'text';
     
 }
 
 #img1 {
-    width: 70%;
+    width: 60%;
     margin-top: auto;
     display: block;
 }
 #descricao {
-    font-family: 'Berthold';
-    width: 90%;
+    font-family: 'arial';
+    font-size: 0.9vw;
+    width: 80%;
+    color: black;
     
 }
 #descricao2 {
     display: none;
+    color: black;
 }
 
 #contact {
-    font-family: 'Big Caslon';
-    color: red;
+    font-family: 'arial';
 }
 #contact:active {
-    color: red;
+    color: blue;
 }
 #main {
     width: 80%;
@@ -96,56 +91,38 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 a:hover {
     filter: blur(8px);
-    color: red;
+    color: blue;
 }
 a:active {
     text-decoration: none;
-      color: black;
+      color: blue;
 }
 
 #lista {
-    font-family: 'Big Caslon';
-    font-size: 1.6vw;
-    text-align: center;
+    font-family: 'text';
+    font-size: 1.2vw;
+    text-align: left;
     line-height: 1.4vw;
 }
 #des {
-    font-family: 'Berthold';
-    font-size: 0.80vw;
-    text-transform: uppercase;
+    font-family: 'arial';
+    font-size: 1vw;
 }
 #backgroundimg1, #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9, #backgroundimg10, #backgroundimg12 {
     display: none;
-    margin-left: 75%;
-    margin-top: 15%;
+    margin-left: 65%;
+    margin-top: 5%;
     z-index: 50;
     position: absolute;
-    width: 15%;
+    width: 22%;
 }
-#home2{
-    margin-left: 30%;
-    margin-top: 35%;
-    z-index: 50;
-    position: absolute;
-    color: red;
-    font-size: 3vw;
-}
-#home3{
-    margin-left: 85%;
-    margin-top: 6%;
-    z-index: 50;
-    position: absolute;
-    color: red;
-    font-size: 3vw;
-}
+
 #contact2{
     display: none;
-        font-family: 'Big Caslon';
-    color: red;
 
 }
 #leftbar2 {
@@ -155,7 +132,7 @@ a:active {
 @media screen and (max-width: 900px) {
     
 body {
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
 
@@ -163,7 +140,7 @@ body {
 }
     #leftbar{
     width: 90%;
-    font-size: 4vw;
+
     height: auto;
     display: flex;
     flex-direction: column;
@@ -178,7 +155,7 @@ body {
     
     #leftbar2 {
     width: 90%;
-    font-size: 4vw;
+
     height: auto;
     display: flex;
     flex-direction: column;
@@ -192,11 +169,11 @@ body {
 
 #titulo {
 
-    font-size: 6vw;
-    color: red;
+    font-size: 16px;
+
 }
 #subtitulo {
-font-size: 4vw;
+font-size: 14px;
 
     
 }
@@ -242,24 +219,24 @@ font-size: 4vw;
  #main {
      height: auto;
      margin-top: auto;
-     width: 90%;
+     width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 5%;
      z-index: 0;
-     margin-top: 40%;
+     margin-top: 20%;
 }
 
 #lista {
     margin-top: 20%;
-    font-size: 7vw;
+    font-size: 20px;
     text-align: center;
-    line-height: 6.5vw;
+    line-height: 5vw;
 }
 #des {
-    font-family: 'Berthold';
-    font-size: 4vw;
-    text-transform: uppercase;
+    font-family: 'arial';
+    font-size: 18px;
+
 }
     #backgroundimg1, #backgroundimg2, #backgroundimg3, #backgroundimg4, #backgroundimg5, #backgroundimg6, #backgroundimg7, #backgroundimg8, #backgroundimg9, #backgroundimg10, #backgroundimg12 {
     display: none;

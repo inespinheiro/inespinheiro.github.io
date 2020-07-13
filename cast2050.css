@@ -5,107 +5,105 @@ html {
 }
 body {
     height: auto;
-    font-family: 'Big Caslon';
-    font-size: 18px;
-    color: black;
+    font-family: 'arial';
+    font-size: 16px;
+    color: blue;
     margin: 0px;
     display: flex;
     flex-direction: row;
-    background-color: #f2f4ee;
+    background-color: white;
 
 }
 @font-face {
-    font-family: Big Caslon;
-    src: url(fonts/bigcaslon.ttf);
+    font-family: arial;
+    src: url(fonts/arial.ttf);
 }
 @font-face {
-    font-family: Happy Times;
-    src: url(fonts/happytimes.otf);
+    font-family: text;
+    src: url(fonts/Minipax-Regular.ttf);
 }
-@font-face {
-    font-family: Berthold;
-    src: url(fonts/berthold.otf);
-}
-#home2{
-    margin-left: 80%;
-    margin-top: 10%;
-    z-index: 50;
-    position: absolute;
-    color: red;
-    font-size: 3vw;
-}
-#home3{
-    margin-left: 35%;
-    margin-top: 80%;
-    z-index: 50;
-    position: absolute;
-    color: red;
-    font-size: 3vw;
-}
+
+
 
 #leftbar{
     width: 20%;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
-    color: black;
-    height: 50vw;
-    font-size: 1vw;
+    font-size: 0.9vw;
+    height: 60%;
     display: flex;
     flex-direction: column;
 }
-#collab{
-    font-family: 'Berthold';
-    color: red;
-}
-
 
 #home {
-    color: red;
-    font-size: 3vw;
+    color: blue;
+    text-decoration: underline;
 }
 #home:active {
-    color: red;
+    color: blue;
 }
 
 #home:hover {
     filter: blur(8px);
 }
 
-#numbers {
-    font-family: 'Happy Times'
-}
-
 #titulo {
-    font-size: 1.6vw;
-    color: red;
+    font-size: 1.2vw;
+    font-family: text;
 }
 #subtitulo {
-    font-family: 'Berthold';
+    font-family: 'text';
     
-}
-#numeros {
-    font-family: 'Happy Times';
 }
 
 #img1 {
-    width: 70%;
+    width: 60%;
     margin-top: auto;
     display: block;
 }
 #descricao {
-    font-family: 'Berthold';
-    width: 100%;
+    font-family: 'arial';
+    font-size: 0.9vw;
+    width: 80%;
+    color: black;
     
 }
+
+#collab{
+
+    color: blue;
+}
+
+
 #contact {
-    font-family: 'Big Caslon';
-    color: red;
-    font-size: 1.5vw;
+
+
 }
 #contact:active {
-    color: red;
+    color: blue;
 }
+#descricao2 {
+    display: none;
+}
+#contact2 {
+    display: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    filter: blur(8px);
+    color: blue;
+}
+a:active {
+    text-decoration: none;
+      color: blue;
+}
+
 #main {
     width: 80%;
     margin-left: auto;
@@ -115,18 +113,7 @@ body {
     flex-direction: column;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    filter: blur(8px);
-    color: red;
-}
-a:active {
-    text-decoration: none;
-      color: black;
-}
+
 #cima {
     width: 100%;
     height: 50vw;
@@ -216,9 +203,8 @@ a:active {
     display: none;
 }
 @media screen and (max-width: 900px) {
-    
-    body {
-    font-size: 18px;
+body {
+    font-size: 14px;
     display: flex;
     flex-direction: column;
 
@@ -226,52 +212,58 @@ a:active {
 }
     #leftbar{
     width: 90%;
-    font-size: 4vw;
-    height: 90vw;
+
+    height: auto;
     display: flex;
     flex-direction: column;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 7%;
+        height: 20%;
+        position: absolute;
+
+
 }
     
+    #leftbar2 {
+    width: 90%;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 #home {
     display: none;
 }
 
 #titulo {
 
-    font-size: 6vw;
-    color: red;
+    font-size: 16px;
+
 }
 #subtitulo {
-font-size: 4vw;
+font-size: 14px;
 
     
 }
-    #home2 {
-        display: none;
+    #collab {
+        font-size: 14px;
     }
-    #home3 {
-        display: none;
-    }
-
+  
 #img1 {
-    margin-bottom: auto;
-    width: 60%;
-    margin-top: auto;
-    display: block;
-            margin-left: auto;
-        margin-right: auto;
+    display: none;
 }
 #descricao2 {
-    display: flex;
-    font-family: 'Berthold';
+    display: block;
+    font-family: 'arial';
     width: 100%;
-            margin-left: auto;
-        margin-right: auto;
+     margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     
 }
     #descricao {
@@ -284,8 +276,7 @@ font-size: 4vw;
         display: flex;
         text-align: center;
         flex-direction: column;
-        font-size: 5vw;
-        color: red;
+        font-size: 4vw;
         
     }
 
@@ -295,7 +286,10 @@ font-size: 4vw;
     margin-left: auto;
     margin-right: auto;
     padding: 5%;
+     margin-top: 50%;
 }
+
+
 
 
     #hero {

@@ -5,118 +5,102 @@ html {
 }
 body {
     height: auto;
-    font-family: 'Big Caslon';
-    font-size: 18px;
-    color: black;
+    font-family: 'arial';
+    font-size: 16px;
+    color: blue;
     margin: 0px;
     display: flex;
     flex-direction: row;
-    background-color: #f2f4ee;
+    background-color: white;
 
 }
 @font-face {
-    font-family: Big Caslon;
-    src: url(fonts/bigcaslon.ttf);
+    font-family: arial;
+    src: url(fonts/arial.ttf);
 }
 @font-face {
-    font-family: Happy Times;
-    src: url(fonts/happytimes.otf);
+    font-family: text;
+    src: url(fonts/Minipax-Regular.ttf);
 }
-@font-face {
-    font-family: Berthold;
-    src: url(fonts/berthold.otf);
-}
-#home2{
-    margin-left: 40%;
-    margin-top: 40%;
-    z-index: 50;
-    position: absolute;
-    color: red;
-    font-size: 3vw;
-}
-#descricao4 {
-    display: none;
-}
+
+
+
 #leftbar{
     width: 20%;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
-    color: black;
-    font-size: 1vw;
-    height: 45vw;
+    font-size: 0.9vw;
+    height: 60%;
     display: flex;
     flex-direction: column;
 }
-#descricao3 {
-    display: none;
-}
 
 #home {
-    color: red;
-    font-size: 3vw;
+    color: blue;
+    text-decoration: underline;
 }
 #home:active {
-    color: red;
+    color: blue;
 }
 
 #home:hover {
     filter: blur(8px);
 }
 
-#numbers {
-    font-family: 'Happy Times'
-}
+
 
 #titulo {
-    font-size: 1.6vw;
-    color: red;
+    font-size: 1.2vw;
+    font-family: text;
 }
 #subtitulo {
-    font-family: 'Berthold';
+    font-family: 'text';
     
 }
 
 #img1 {
-    width: 70%;
+    width: 60%;
     margin-top: auto;
     display: block;
 }
 #descricao {
-    font-family: 'Berthold';
-    width: 100%;
+    font-family: 'arial';
+    font-size: 0.9vw;
+    width: 80%;
+    color: black;
     
 }
-#descricao2 {
-    font-family: 'Berthold';
-    width: 40%;
-    margin-left: 55%;
-    margin-right: 5%;
-        font-size: 1vw;
-    text-align: right;
-    
+
+
+#collab{
+
+    color: blue;
 }
+
+
 #contact {
-     font-family: 'Big Caslon';
-    color: red;
-    font-size: 1.5vw;
+
+
 }
 #contact:active {
-    color: red;
+    color: blue;
 }
 
-
+#contact2 {
+    display: none;
+}
 a {
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 a:hover {
     filter: blur(8px);
-    color: red;
+    color: blue;
 }
 a:active {
     text-decoration: none;
-      color: black;
+      color: blue;
 }
 
 
@@ -246,68 +230,21 @@ a:active {
 }
 #botaofull2:hover {
     filter: blur(4px);}
-#proom {
-    width: auto;
-    display: flex;
-    flex-direction: column;
+
+#descricao2 {
+    color: black;
+    font-family: 'arial';
+    width: 50%;
+    font-size: 14px;
 }
-#linha {
-    height: 25vw;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-#linha1 {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 40vw;
-    width: 100%;
-    background-image: url(img/IMG_0172.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#img2 {
-    margin-top: 1%;
-    margin-right: 1%;
-    width: 49%;
-    background-image: url(img/IMG_0386.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#img3 {
-    margin-top: 1%;
-    margin-left: 1%;
-    width: 49%;
-    background-image: url(img/IMG_0553.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#descricao3, #descricao4 {
+display: none;
 }
 
-#img4 {
-    margin-top: 2%;
-    margin-right: 1%;
-    width: 49%;
-    background-image: url(img/IMG_0521.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#img5 {
-    margin-top: 2%;
-    margin-left: 1%;
-    width: 49%;
-    background-image: url(img/IMG_0261.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-        background-size: cover;
-}
 @media screen and (max-width: 900px) {
     
-    body {
-    font-size: 18px;
+body {
+    font-size: 14px;
     display: flex;
     flex-direction: column;
 
@@ -315,47 +252,53 @@ a:active {
 }
     #leftbar{
     width: 90%;
-    font-size: 4vw;
+
     height: auto;
     display: flex;
     flex-direction: column;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 7%;
+        height: 20%;
+        position: absolute;
+
+
 }
     
+    #leftbar2 {
+    width: 90%;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 #home {
     display: none;
 }
 
 #titulo {
 
-    font-size: 6vw;
-    color: red;
+    font-size: 16px;
+
 }
 #subtitulo {
-font-size: 4vw;
+font-size: 14px;
 
     
 }
-    #home2 {
-        display: none;
+    #collab {
+        font-size: 14px;
     }
-    #home3 {
-        display: none;
-    }
-
+  
 #img1 {
-    margin-bottom: auto;
-    width: 60%;
-    margin-top: auto;
-    display: block;
-            margin-left: auto;
-        margin-right: auto;
+    display: none;
 }
 #descricao3 {
     display: flex;
-    font-family: 'Berthold';
+    font-family: 'arial';
     width: 100%;
             margin-left: auto;
         margin-right: auto;
@@ -365,12 +308,13 @@ font-size: 4vw;
 }
 #descricao4 {
     display: flex;
-    font-family: 'Berthold';
-    font-size: 4vw;
+    font-family: 'arial';
+
     width: 90%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    color: black;
     
 }
     
@@ -398,18 +342,11 @@ font-size: 4vw;
     margin-left: auto;
     margin-right: auto;
     padding: 5%;
+     margin-top: 35%;
 }
 
-#lista {
-    font-size: 7vw;
-    text-align: center;
-    line-height: 6.5vw;
-}
-#des {
-    font-family: 'Berthold';
-    font-size: 4vw;
-    text-transform: uppercase;
-}
+
+
     #hero {
         height: 60vw;
     }
