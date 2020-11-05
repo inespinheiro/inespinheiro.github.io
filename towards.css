@@ -17,10 +17,6 @@ html {
     font-family: arial;
     src: url(fonts/arial.ttf);
 }
-@font-face {
-    font-family: text;
-    src: url(fonts/Minipax-Regular.ttf);
-}
 
 
 
@@ -51,10 +47,13 @@ html {
 
 #titulo {
     font-size: 1.2vw;
-    font-family: text;
+    font-family: new-spirit, serif;
+font-weight: 300;
 }
 #subtitulo {
-    font-family: 'text';
+
+    font-family: new-spirit, serif;
+font-weight: 300;
     
 }
 

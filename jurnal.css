@@ -52,10 +52,14 @@ body {
 
 #titulo {
     font-size: 1.2vw;
-    font-family: text;
+    font-family: new-spirit, serif;
+font-weight: 300;
+font-style: normal;
 }
 #subtitulo {
-    font-family: 'text';
+    font-family: new-spirit, serif;
+font-weight: 300;
+font-style: normal;
     
 }
 
